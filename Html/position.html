@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        /* Types of Postion: static(default), absolute, relative, fixed, sticky */
+        .container {
+            border: 3px solid rgb(214, 103, 13);
+            background-color: khaki;
+            height: 29087px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid rebeccapurple;
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+
+
+            /* relative: relative to its normal position 
+            position: relative;
+            left: 30px;
+            top: 30px; */
+
+            /* absolute: absolute from its parents's position 
+            position: absolute;
+            left: 30px;
+            top: 30px; */
+
+            /* fixed: fixed position while scrolling the page 
+            position: fixed;
+            right: 30px;
+            bottom: 30px; */
+
+            /* sticky: stick at the top of the page while scrolling */
+            position: sticky;
+            top: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
