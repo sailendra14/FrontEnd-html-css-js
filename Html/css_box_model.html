@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: aqua;
+            border: 3px solid orange;
+            padding-left: 19px;
+            margin: 12px;
+            border-radius: 20px;
+
+            /* short-cuts 
+            padding: 20px 40px 70px 90px;  top right bottom left */
+
+            padding: 20px 40px;/*padding: y(top/bottom) y(left/right); */
+            width: 590px;
+            box-sizing: border-box;
+        }
+        #cls{
+            margin-left: 14px;
+        }
+        body{
+            background-color: rgb(251, 251, 253);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="cls">Box Model in CSS</h2>
+    <div class="container">
+        <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at similique, ipsa molestiae
+            aspernatur delectus soluta porro earum consequatur tempore pariatur, esse atque quidem, accusantium deserunt
+            hic fugiat cum fuga.</p>
+    </div>
+    <div class="container">
+        <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at similique, ipsa molestiae
+            aspernatur delectus soluta porro earum consequatur tempore pariatur, esse atque quidem, accusantium
+            deserunt hic fugiat cum fuga.</p>
+    </div>
+    <div class="container">
+        <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at similique, ipsa molestiae
+            aspernatur delectus soluta porro earum consequatur tempore pariatur, esse atque quidem, accusantium
+            deserunt hic fugiat cum fuga.</p>
+    </div>
+    <div class="container">
+        <p class="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at similique, ipsa molestiae
+            aspernatur delectus soluta porro earum consequatur tempore pariatur, esse atque quidem, accusantium
+            deserunt hic fugiat cum fuga.</p>
+    </div>
+
+
+</body>
+
+</html>
