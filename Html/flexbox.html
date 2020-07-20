@@ -1,0 +1,76 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning FlexBox {Flexible Box}
+Date:20 july 2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box in CSS</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 98%;
+            margin: 10px 10px;
+            border: 2px solid black;
+            display: flex;
+            /*   flex-direction: row;
+          flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-direction: column; 
+            flex-wrap: wrap;*/
+
+            /* short hand*/
+            /*  flex-flow: wrap row;
+            justify-content:center;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            
+            align-items: center;
+            align-items: flex-end; */
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+
+            background-color: tomato;
+            margin: 10px;
+            padding: 3px;
+            border: 2px solid orchid;
+        }
+
+        #item1 {
+            order: 3; 
+           /* flex-basis: 100px; */
+        }
+
+        #item2 {
+            
+          flex-basis: 200px; 
+        }
+
+        #item3 {
+          /*  order: 1; */
+         /* flex-basis: 300px; */
+         align-self:stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="header">FlexBox Tutorial by Harry </h2>
+
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>  -->
+    </div>
+
+</body>
+
+</html>
