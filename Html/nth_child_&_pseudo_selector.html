@@ -1,0 +1,67 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning nth Child and Pseudo Selector
+Date:20 july 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child Selector</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 300px;
+            background-color: burlywood;
+            display: block;
+        }
+
+        input [type='text'] {
+            color: chartreuse;
+            border: 3px solid orangered;
+        }
+/*
+       a[target] {
+            color: aqua;
+            font-size: 25px;
+        }
+        
+        a[target='_self'] {
+            color: rgb(255, 238, 0);
+            font-size: 25px;
+        }
+
+        li:nth-child(2n+0){
+            color: rgb(68, 0, 255);
+        } */
+
+        li:nth-child(odd){
+            background-color: rgb(8, 8, 8);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Google Search</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Google Facebook</a></h1>
+
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">Item 1</li>
+            <li class="item" id="item2">Item 2</li>
+            <li class="item" id="item3">Item 3</li>
+            <li class="item" id="item4">Item 4</li>
+            <li class="item" id="item5">Item 5</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
