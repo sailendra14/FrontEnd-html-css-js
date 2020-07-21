@@ -1,0 +1,47 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning variables and custom properties
+Date:20 july 2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables and custom properties</title>
+    <style>
+        :root {
+            /*Here we declear glogal variable*/
+            --box-color: rgb(28, 29, 29);
+            --primary-color: rgb(60, 255, 0);
+            --secondary-color:grey;
+        }
+
+        .box {
+            /* --box-color:rgb(28, 29, 29);   declearing local variable*/
+            width: 200px;
+            height: 200px;
+            /* background-color: var(--box-color);  using variable*/
+            background-color: var(--secondary-color);
+            border: 2px solid black;
+            margin: 2px 3px;
+            /* box-shadow: 5px 4px var(--box-color);  using variable*/
+            box-shadow: 5px 4px var(--box-color);
+        }
+
+        .container {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
