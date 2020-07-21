@@ -1,0 +1,58 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning shadows
+Date:20 july 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadows and Box Shadows</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 2px 3px;
+            margin: 3px 10px;
+          
+          /*  box-shadow: -4px -5px rgba(19, 18, 18, 0.068); */
+           /* box-shadow: 4px 5px  3px rgba(19, 18, 18, 0.24);  third one for blurr radious */
+           /* box-shadow: 4px 5px  3px rgba(19, 18, 18, 0.24);  */
+           box-shadow: 4px 5px  3px 5px rgba(19, 18, 18, 0.24);  
+        }
+
+        .card h3{
+            text-shadow: 2px 2px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shadows in CSS</h1>
+    <div class="container">
+        <div class="card" id="card1">
+
+            <h3>Card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum beatae sed itaque quia,
+                possimus ab accusamus dolores neque dolorem amet quasi exercitationem vero excepturi recusandae
+                quibusdam vel quidem repudiandae?</p>
+        </div>
+        <div class="card" id="card2">
+            <h3>Card 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum beatae sed itaque quia,
+                possimus ab accusamus dolores neque dolorem amet quasi exercitationem vero excepturi recusandae
+                quibusdam vel quidem repudiandae?</p>
+        </div>
+        <div class="card" id="card3">
+            <h3>Card 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsum beatae sed itaque quia,
+                possimus ab accusamus dolores neque dolorem amet quasi exercitationem vero excepturi recusandae
+                quibusdam vel quidem repudiandae?</p>
+        </div>
+    </div>
+</body>
+
+</html>
