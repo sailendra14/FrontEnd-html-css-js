@@ -1,0 +1,54 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning Media Query
+Date:20 july 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query in CSS</title>
+    <style>
+        .box{
+            background-color: aqua;
+            color: rgb(20, 20, 20);
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+        
+        @media only screen and (max-width: 300px){
+            #box1{
+                display: block;
+                background-color: hotpink;
+            }
+        }
+        
+        @media only screen and  (min-width: 300px) and (max-width: 500px){
+            #box2{
+                display: block;
+                background-color: rgb(39, 102, 196);
+            }
+        }
+        @media only screen and  (min-width: 500px) and (max-width: 800px){
+            #box3{
+                display: block;
+                background-color: rgb(36, 172, 36);
+            }
+        }
+        @media only screen and  (min-width: 800px){
+            #box4{
+                display: block;
+                background-color: rgb(202, 134, 78);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">iPhone</div>
+    <div class="box" id="box2">Tablate</div>
+    <div class="box" id="box3">Computer</div>
+    <div class="box" id="box4">WideScreen Computer</div>
+</body>
+</html>
