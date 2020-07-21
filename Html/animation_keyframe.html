@@ -1,0 +1,87 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning Key Frames $ Animations
+Date:20 july 2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frames $ Animations</title>
+    <style>
+        .container {
+            background-color: burlywood;
+        }
+
+        .box {
+            background-color: rgb(167, 167, 230);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: Sai;
+            animation-name: Sai1;
+            animation-duration: 3s;
+            /*animation-iteration-count: 1;
+            animation-fill-mode: forwards; 
+            animation-fill-mode: alternate; 
+            animation-timing-function: ease-out; 
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;*/
+
+            /*SHORT-HAND*/
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+animation: Sai1 5s ease-out 1s 3 forwards alternate;
+
+        }
+
+        @keyframes Sai {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 900px;
+            }
+        }
+
+        @keyframes Sai1 {
+            0% {
+                top: 0px;
+                left: 0px;
+
+            }
+
+            25% {
+                top: 0px;
+                left: 250px;
+
+            }
+
+            75% {
+
+                top: 250px;
+                left: 250px;
+
+            }
+
+            100% {
+
+                top: 250px;
+                left: 0px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Key Frames $ Animations</h2>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+
+</html>
