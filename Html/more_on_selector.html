@@ -1,0 +1,36 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning Media Query
+Date:20 july 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector </title>
+    <style>
+        div > p{ /* greater > direct child will affected*/
+            background-color: hotpink;
+            color: black;
+            
+        }
+
+        div + p{
+            color: blue;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>Lorem, ipsum dolor.</p></li>
+            </ul>
+            <p>Lorem ipsum dolor sit, amet consectetu.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ooooo</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, deserunt. oooo</p>
+</body>
+</html>
