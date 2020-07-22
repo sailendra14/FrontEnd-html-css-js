@@ -1,0 +1,56 @@
+<!-- Author: Sailendra Chettri
+Purpose: Learning Transform
+Date:20 july 2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(172, 255, 47, 0.534);
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.301);
+            border: 2px solid green;
+            border-radius: 4px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover {
+            /*  transform: rotate(360deg); */
+            /* transform: skew(35deg);*/
+            /* transform: scale(2); */
+            /* transform: translate(200px); */
+            transform: translateY(124px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+
+</html>
