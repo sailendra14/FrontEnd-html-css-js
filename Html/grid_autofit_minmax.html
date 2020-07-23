@@ -1,0 +1,39 @@
+<!-- Author: Sailendra
+Purpose: Css Grid_AutoFit and MinMax for Layouts
+date: 22/08/2020 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid_AutoFit and MinMax for Layouts</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 1rem;
+   /* grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center; */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.box{
+    border: 2px solid black;
+    background-color: rgb(255, 190, 190);
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is container1</div>
+        <div class="box">This is container2</div>
+        <div class="box">This is container3</div>
+        <div class="box">This is container4</div>
+        <div class="box">This is container5</div>
+        <div class="box">This is container6</div>
+        <div class="box">This is container7</div>
+        <div class="box">This is container8</div>
+        <div class="box">This is container9</div>
+        <div class="box">This is container10</div>
+    </div>
+</body>
+</html>
