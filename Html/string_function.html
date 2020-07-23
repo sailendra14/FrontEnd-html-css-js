@@ -1,0 +1,33 @@
+<!-- Author: Sailendra
+Purpose: JavaScript String Function
+date: 23/08/2020 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Function</title>
+</head>
+<body>
+    
+    <script>
+        //js code
+        var str = "my string here";
+        console.log(str);
+
+        var posi = str.indexOf('here');
+        posi = str.lastIndexOf('e');
+        console.log(posi);
+
+        var sli = str.slice(1,6);
+        console.log(sli);
+
+        var replaced = str.replace('my', 'The');
+        console.log(replaced);
+
+        var wspaces = "                     this i s whit  e spaces    ok";
+        console.log(wspaces);
+        console.log(wspaces.trim());
+    </script>
+</body>
+</html>
