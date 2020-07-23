@@ -1,0 +1,132 @@
+<!-- Author: Sailendra
+Purpose: Css Media Query 
+date: 22/08/2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Query </title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: blue;
+            }
+            .container{
+                grid-template-areas:
+                'nav nav nav nav'
+                'section section section section'
+                'aside aside aside aside '
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            body {
+                background-color:green;
+            }
+            .container{
+                grid-template-areas:
+                'nav nav nav nav'
+                'section section section section'
+                'aside aside aside aside '
+                'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: orange;
+            }
+            .container{
+                grid-template-areas:
+                'nav nav nav nav'
+                'section section section section'
+                'aside aside aside aside '
+                'footer footer footer footer';
+            }
+            span{
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+                background-color: aqua;
+            }
+        }
+
+        .bdr {
+            background-color: hotpink;
+            border: 2px solid rebeccapurple;
+            text-align: center;
+            
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        section p{
+            text-align: left;
+            padding: 15px;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+           <span>Home</span>
+           <span>About</span>
+           <span>Contact</span>
+           <span>Services</span>
+        </nav>
+        <section class="bdr">
+            <h2>Lorem ipsum dolor, sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero ad a exercitationem eos asperiores nemo omnis dolorem deleniti dolor corporis, consequatur aliquid illum ipsum deserunt itaque! Culpa facere numquam amet possimus nesciunt nemo veritatis ullam, iste est corporis voluptatum libero tempora impedit repellendus. Ut dicta quibusdam sapiente quos id blanditiis consequatur! Minus, tempore? Nisi saepe accusantium ad molestiae, nihil maiores harum corporis fuga perferendis illum doloremque at dolorum veritatis aliquam, sunt nobis quis? Voluptatibus est iusto esse architecto ullam quod atque asperiores similique nam? Cupiditate laudantium nam quo, corrupti labore unde minus aliquid officiis est maiores eius quis tempore, eos distinctio a debitis soluta harum esse facere? Suscipit nesciunt ea tenetur molestiae provident repellat debitis deleniti deserunt blanditiis a, corporis cupiditate repellendus facilis doloremque aspernatur consequuntur. Quos molestias esse exercitationem amet corrupti enim, fugiat aspernatur impedit repudiandae consequatur, tenetur quia eveniet temporibus placeat voluptas neque labore distinctio sequi ratione obcaecati atque reprehenderit. Quidem omnis temporibus quae. Aliquid consequatur nemo corporis excepturi ipsa? Ad doloremque modi laboriosam sit nostrum ipsam vero possimus eveniet commodi tempora unde iste nam est praesentium repudiandae, officia reprehenderit optio, inventore ratione voluptas quisquam. At optio nesciunt, porro dicta provident unde quae corrupti reprehenderit necessitatibus fugit!</p>
+        </section>
+        <aside class="bdr">
+            <h2>More about us</h2>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright &copy; by Author 2020.</footer>
+</body>
+
+</html>
