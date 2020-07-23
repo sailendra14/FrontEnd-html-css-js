@@ -1,0 +1,69 @@
+<!-- Author: Sailendra
+Purpose: Css Grid_Template area for Layouts
+date: 22/08/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid_Template area for Layouts</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: black;
+            color: blanchedalmond;
+            border: 2px solid green;
+            padding: 10px 15px;
+            margin: 8px 20px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Blog
+        </div>
+        <div id="section" class="item">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, tempora illo rerum tenetur consequatur pariatur earum, ipsa at error enim quisquam eius aspernatur repellendus! Eligendi laborum beatae sapiente! Totam, consectetur?</p>
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate praesentium quos deserunt expedita debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis hic ad commodi, dolores beatae reprehenderit mollitia et animi perferendis totam consequatur ducimus nihil nobis iure? Iste error optio voluptates nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit necessitatibus in ab veritatis a doloribus exercitationem ex provident dolorum modi fuga dolor praesentium animi quod quae, iste error non alias nesciunt incidunt odit! Dicta velit eos blanditiis. Nesciunt, iure officia ullam suscipit alias eos veniam aut numquam ducimus eaque! Quas eaque illum corporis aliquid dignissimos, quidem pariatur sit quod veniam, quibusdam tenetur recusandae dicta. Libero nostrum atque natus, ea consequatur ratione, vitae a doloribus nihil laboriosam eius architecto, laborum aliquid eos voluptates autem magni illo! Rerum voluptate quia nemo, excepturi laudantium dolorem odit temporibus, labore ducimus sint reiciendis, molestiae cupiditate.
+        </div>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div> -->
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta eveniet dignissimos expedita, autem nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem illo similique, doloribus provident recusandae ducimus adipisci? Doloremque ullam quis unde dolorum non doloribus dolor nobis obcaecati quae, quibusdam id repellat pariatur! Quis vero repellendus incidunt sint veniam fugit minus in harum praesentium dolorem impedit sunt ipsa maxime corrupti est atque reprehenderit error quaerat, nemo quasi porro ab, a quisquam! Et explicabo distinctio ratione totam quaerat fugit ipsam ea maiores sequi ut officiis consectetur laboriosam incidunt dolore magni consequuntur, reiciendis neque rem consequatur pariatur eligendi nihil quae? Nesciunt, id delectus, velit harum, architecto iure doloribus maiores tempore voluptatum neque deleniti! </footer>
+    </div>
+</body>
+</html>
