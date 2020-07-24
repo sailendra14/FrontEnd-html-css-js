@@ -1,0 +1,43 @@
+<!-- Author: Sailendra
+Purpose: JavaScript DOM Navigation
+date: 23/08/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Navigation</title>
+</head>
+<body>
+    <h1>JavaScript DOM Navigation</h1>
+
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Sercives</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        
+        let main = document.getElementById('main');
+        console.log(main);
+        
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        
+        //CSS selector
+        let sel = document.querySelector('.container');
+        console.log("CSS Selector Return", sel);
+
+    </script>
+</body>
+</html>
