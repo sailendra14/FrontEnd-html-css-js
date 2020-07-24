@@ -1,0 +1,58 @@
+<!-- Author: Sailendra
+Purpose: JavaScript Date and Time
+date: 23/08/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Date and Time</title>
+    <style>
+        .container {
+            border: 2px solid blueviolet;
+            background-color: burlywood;
+            margin: 4px;
+            padding: 30px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Date and Time</h2>
+    <hr>
+    <div class="container">
+        <span id="time"></span>
+    </div>
+    <script>
+        console.log('Somen Random Text Here');
+        /* let dt = new Date();
+         console.log(dt);
+ 
+         let dt = new Date('2020-12-31');
+         console.log(dt);
+ 
+         let yr = dt.getFullYear();
+         console.log("Full Year is ", yr);
+ 
+         let month = dt.getMonth();
+         console.log('Month is ', month);  */
+
+
+        function currentTime() {
+
+
+            time.innerHTML = new Date();
+        }
+        setInterval(currentTime, 1000);
+
+
+    </script>
+</body>
+
+</html>
