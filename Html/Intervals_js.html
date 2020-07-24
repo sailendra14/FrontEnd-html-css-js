@@ -1,0 +1,45 @@
+<!-- Author: Sailendra
+Purpose: JavaScript Intervals
+date: 23/08/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Intervals</title>
+</head>
+
+<body>
+    <div class="container">
+        Current time: <span id="time"></span>
+
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam autem repellendus, dolor suscipit maiores
+            obcaecati libero commodi, architecto dicta quis illum adipisci vel odio facilis accusantium iusto delectus.
+            Sit, voluptatibus?</p>
+    </div>
+
+    <script>
+        console.log('Some random text i wrote here');
+
+      /*  function greet(name, text) {
+            console.log('Hello World', name);
+        }
+        //setTimeout(greet, 5000, "Sailendra");
+
+        intervalId = setInterval(greet, 2000, 'empty')
+        clearInterval(intervalId);
+        */
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>
