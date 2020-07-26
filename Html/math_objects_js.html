@@ -1,0 +1,62 @@
+<!-- Author: Sailendra
+Purpose: JavaScript Math Objects
+date: 23/08/2020 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Math Objects</title>
+</head>
+
+<body>
+    <h2>Math Object</h2>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, corrupti?
+    </div>
+    <script>
+
+        // Printing the Math Objects
+        let m = Math;
+        console.log(m);
+
+        // Printing the constants from Math Objects
+       /* console.log('The value of math.E is', Math.E);
+        console.log('The value of math.LN10 is', Math.LN10);
+        console.log('The value of math.LOG10E is', Math.LOG10E);
+        console.log('The value of math.LOG2E is', Math.LOG2E);
+        console.log('The value of math.SQRT2 is', Math.SQRT2);
+        console.log('The value of math.SQRT1_2 is', Math.SQRT1_2);
+        console.log('The value of math.PI is', Math.PI);
+        console.log('The value of math.LN2 is', Math.LN2); */
+        
+        // Printing the Functions from Math Objects
+        let a = 40.90;
+        let b = 40;
+        console.log('The value of a and b is ', a, ' and ', b);
+        console.log('The value of round a and round b is ', Math.round(a), ' and ', Math.round(b));
+
+        console.log('Square of 56 is ', Math.sqrt(56));
+
+        // Trignomatric Functions
+        console.log('The value of sin(PI) is ', Math.sin(Math.PI/2));
+
+        //Min and Max
+        console.log('maximun value of 4, 5, 6 is ', Math.max(4, 5, 6));
+        console.log('Minimum value of 4, 5, 6 is ', Math.min(4, 5, 6));
+
+        //Generating Random Number
+        /*let r = Math.random();
+        console.log('Random Number is ', r);*/
+
+        let r1 = 1;
+        let r2 = 100;
+        let val = r1 + (r2-r1)*Math.random();
+        //let val = r1 - (r1-r2)*Math.random();
+        console.log('The Random Number b/w 1 to 100 is ',Math.ceil(val));
+
+    </script>
+</body>
+
+</html>
