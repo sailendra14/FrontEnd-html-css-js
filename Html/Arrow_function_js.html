@@ -1,0 +1,55 @@
+<!-- Author: Sailendra
+Purpose: JavaScript Arrow Function
+date: 23/08/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrow Function</title>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus magnam eaque iusto dolor amet, voluptate vero
+        ullam labore? Ut, quo!
+    </div>
+    <script>
+        /*   function greet() {
+               console.log('Hello Brother! Good Morning');
+           }
+           greet(); */
+
+        //Arrow Function
+        /* let   greet = () =>{
+              console.log('Hello Brother! Good Morning. Using Shortcut');
+          }
+          greet(); */
+
+        /* let greet = () => console.log('Hello Brother! Good Morning. Using Shortcut');
+         greet(); */
+
+        /* let sum = (a, b) =>{
+            return a + b;
+        }; */
+
+        //OR
+        //let sum = (a, b) => a+b;
+
+        //let half = a => a / 2; 
+
+        let obj1 = {
+            names: ["sai", "len", "dra"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log('Student: ' + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>
