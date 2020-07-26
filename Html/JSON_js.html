@@ -1,0 +1,35 @@
+<!-- Author: Sailendra
+Purpose: JavaScript JSON
+date: 23/08/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript JSON</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor</h1>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+
+    <script>
+        let jsonobj = {
+            fname: "sai",
+            lname: "chettri"
+        };
+        console.log(jsonobj);
+        let myjson = JSON.stringify(jsonobj);
+        console.log(myjson);
+
+        myjson = myjson.replace('sai', 'bhai');
+        console.log(myjson);
+
+        newjson = JSON.parse(myjson);
+        console.log(newjson);
+    </script>
+</body>
+
+</html>
