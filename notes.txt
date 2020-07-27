@@ -1,0 +1,18 @@
+version
+
+first version:
+1.0.0
+
+1 == major
+0 == minor
+0 == bug fixes
+
+// packages only used in development
+--save-dev ---------> only used in development not in production
+
+// packages for global used
+ --global
+
+// versions constant, greaterthan etc
+> == greater version allow to install
+^ == greater not  version allow to install
