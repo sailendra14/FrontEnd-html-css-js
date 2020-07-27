@@ -15,4 +15,4 @@ first version:
 
 // versions constant, greaterthan etc
 > == greater version allow to install
-^ == greater not  version allow to install
+^ == greater not version allow to install
