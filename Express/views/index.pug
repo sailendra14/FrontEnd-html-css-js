@@ -30,12 +30,13 @@ date:28 july 2020 -->
             | #{content}
             | pipe character is needed 
         </p> -->
-        <form action="" id="contact">
-            <input type="text" id="name" class="con-form" placeholder="e.g. John">
-            <input type="email" id="email" class="con-form" placeholder="example@john.com">
+        <form action="/" method="POST" id="contact">
+            <input type="text" name="name" id="name" class="con-form" placeholder="e.g. John">
+            <input type="text" name="age" id="age" class="con-form" placeholder="age">
+            <input type="email" name="email" id="email" class="con-form" placeholder="example@john.com">
             <input type="password" id="password" class="con-form" placeholder="Password">
             <input type="password" id="password2" class="con-form" placeholder="Confirm Password">
-            <button>Submit</button>
+            <button class="btn">submit</button>
         </form>
     </div>
 </div>

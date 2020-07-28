@@ -4,6 +4,9 @@
     margin: -7px 0px;
     padding: 0px 7px;
     height: 100%;
+    /* background: url('/img/bg.jpg') no-repeat center center; */
+    /* background-image: url('/img/bg.jpg'); */
+    background: url('/img/bg.jpg') no-repeat center center;
 }
 
 .container-body{
