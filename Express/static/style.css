@@ -1,0 +1,45 @@
+
+.container{
+    border: 2px solid rgba(9, 7, 17, 0.64);
+    margin: -7px 0px;
+    padding: 0px 7px;
+    height: 100%;
+}
+
+.container-body{
+    margin-top: 49px;
+    padding-left: 55px;
+}
+
+nav{
+    background-color: rgb(227, 233, 233);
+    margin: -14px -6px;
+    padding: 0px 0px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 24px 22px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+ul li a:hover{
+    color: rgb(11, 12, 12);
+    font-size: 17px;
+}
+h2{
+    text-align: center;
+}
+#contact{
+    padding: 0px 5px;
+    display: grid;
+    margin: 18px 331px;
+}

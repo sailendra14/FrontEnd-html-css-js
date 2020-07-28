@@ -1,0 +1,44 @@
+<!-- Author: sailendra
+purpose: front page
+date:28 july 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title> <!-- no pipe character is needed in b/w some tags -->
+    style
+        include ../static/style.css
+</head>
+
+<body>
+    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container-body">
+
+        <h2>Get GYM Membership for 90$</h2>
+        <!-- <p>
+            | #{content}
+            | pipe character is needed 
+        </p> -->
+        <form action="" id="contact">
+            <input type="text" id="name" class="con-form" placeholder="e.g. John">
+            <input type="email" id="email" class="con-form" placeholder="example@john.com">
+            <input type="password" id="password" class="con-form" placeholder="Password">
+            <input type="password" id="password2" class="con-form" placeholder="Confirm Password">
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+    </body>
+
+</html>

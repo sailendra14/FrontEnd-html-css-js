@@ -3,34 +3,26 @@ const path = require('path');
 const app = express();
 const port = 80;
 
-//serving static files 
-app.use('/static', express.static('static'));
 
-// Set the Template Engine
-app.set('view engine', 'pug');
+//EXPRESS SPACIFIC STUFF
+app.use('/static', express.static('static')); //serving static files 
 
-// Set the views Directory  
-app.set('views', path.join(__dirname, 'views'));
 
-//Our pug demo endpoint
-app.get("/demo", (req, res) => {
-    res.status(200).render('demo', { title: 'Hello World', message: "PUG End Point" });
+//PUG SPACIFIC STUFF
+app.set('view engine', 'pug'); // Set the Template Engine 
+app.set('views', path.join(__dirname, 'views')); // Set the views Directory 
+
+// ENDPOINTS
+app.get('/', (res, req) => {
+    // const content = "This is a Description";
+    const content = "THIS IS My CONTENT";
+    const title = "THIS IS MY TITLE";
+    const params = {'content':content, 'title':title};
+    req.status(200).render('index.pug', params);
 });
 
 
-app.get("/", (req, res) => {
-    res.send("This is my first express app");
-});
-
-app.get("/about", (req, res) => {
-    res.send("get request:about page");
-});
-
-app.post("/about", (req, res) => {
-    res.send("post request: about page");
-});
-
-
+// STARTING SERVER
 app.listen(port, () => {
     console.log(`The application started successfully in port no ${port}..`);
 });
