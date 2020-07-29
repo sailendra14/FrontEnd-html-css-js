@@ -84,15 +84,19 @@
 
 #mission {
     height: 266px;
+    padding: 16px;
     text-align: center;
     background-color: #296888d2;
 }
 
-#mission h3 {
+#mission h2 {
     text-align: center;
     margin: 2px;
-    padding: 8px;
+    padding: 0px;
     font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 39px;
+
 }
 
 .card {
