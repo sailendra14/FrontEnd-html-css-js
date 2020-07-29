@@ -9,6 +9,8 @@ html(lang="en")
     body
         nav#navbar
             ul
+                div#logo
+                    img(src="/static/img/page_logo.png" alt="page logo")
                 li #[a(href="/") Home]
                 li #[a(href="/") Class Info]
                 li #[a(href="/") About ]
@@ -20,7 +22,7 @@ html(lang="en")
             include ../static/script.js
 
     section#intro
-        div Welcome to Harry's Dance Academy
+        div Welcome to Sai's Dance Academy
         div.small Eat Sleep Dance Repeat
 
     section#mission
@@ -28,12 +30,24 @@ html(lang="en")
 
         div.card
             h4 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/img1.png" alt="our mission logo")
+
 
         div.card
             h4 Dance the way you like
+                div.card-box 
+            div.card-img 
+                img(src="/static/img/img.png" alt="our mission logo")
+
 
         div.card
             h4 Expert Teaching 
+                div.card-box 
+            div.card-img 
+                img(src="/static/img/img2.jpeg" alt="our mission logo")
+
 
     section#sponsers
         h3 Our Sponsers 
