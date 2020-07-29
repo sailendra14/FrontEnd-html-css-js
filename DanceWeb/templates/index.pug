@@ -2,7 +2,7 @@
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Welcome to Dance Website
         style
             include ../static/style.css
@@ -12,7 +12,10 @@ html(lang="en")
                 li #[a(href="/") Home]
                 li #[a(href="/") Class Info]
                 li #[a(href="/") About ]
-                li #[a(href="/") Contact]
+                li #[a(href="/") Contact] 
+                li#search-bar
+                    input(type="search" placeholder="Search your Query") 
+                    button#search-btn Search
         script
             include ../static/script.js
 
@@ -26,6 +29,5 @@ html(lang="en")
     footer#footer
         | Footer section
 
-    
 
-        
+

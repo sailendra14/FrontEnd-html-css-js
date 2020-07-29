@@ -31,8 +31,25 @@
     color: rgb(8, 8, 8);
 }
 
+#navbar li input {
+    margin-left: 500px;
+}
+
+#navbar li button {
+    margin: 0px 9px;
+    color: rgb(65, 64, 64);
+    background-color: white;
+    height: 26px;
+    width: 64px;
+    cursor: pointer;
+}
+
+#navbar button:hover {
+    color: rgb(0, 0, 0);
+}
+
 #intro {
-    height: 400px;
+    height: 386px;
     color: rgb(252, 249, 249);
     display: flex;
     flex-direction: column;
