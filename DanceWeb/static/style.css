@@ -6,7 +6,7 @@
 }
 
 #navbar {
-    background-color: black;
+    background-color: #296988;
     padding: 14px;
 }
 
@@ -28,20 +28,29 @@
 }
 
 #navbar li a:hover {
-    color: rgb(45, 58, 133);
+    color: rgb(8, 8, 8);
 }
 
 #intro {
     height: 400px;
-    color: white;
+    color: rgb(252, 249, 249);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
     font-size: 30px;
-    background-color: violet;
-    background: center/cover no-repeat url('/static/elon.jpg');
+}
+
+#intro::before {
+    position: absolute;
+    content: "";
+    height: 401px;
+    width: 1354px;
+    z-index: -1;
+    opacity: 0.97;
+    background: center/cover no-repeat url('/static/1__.jpg');
+    top: 48px;
 }
 
 #intro .small {
@@ -50,7 +59,7 @@
 
 #sponsers {
     height: 200px;
-    background-color: rgb(46, 124, 76);
+    background-color: #296888d2;
 }
 
 #sponsers h3 {
