@@ -22,7 +22,7 @@
 
 #navbar li a {
     text-decoration: none;
-    padding: 28px;
+    padding: 20px;
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
@@ -71,19 +71,47 @@
 }
 
 #intro .small {
-    font-size: 24px;
+    font-size: 28px;
+}
+
+#mission {
+    height: 266px;
+    text-align: center;
+    background-color: #296888d2;
+}
+
+#mission h3 {
+    text-align: center;
+    margin: 2px;
+    padding: 8px;
+    font-size: 28px;
+}
+
+.card {
+    border-radius: 9px;
+    display: inline-block;
+    border: 2px solid rgb(3, 1, 1);
+    width: 22%;
+    margin: 3px 10px;
+    height: 197px;
+}
+
+.card h4{
+    text-align: center;
+    margin: 10px;
+
 }
 
 #sponsers {
     height: 200px;
-    background-color: #296888d2;
+    background-color: #296888c7;
 }
 
 #sponsers h3 {
     text-align: center;
     margin: 1px;
     padding: 8px;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 #footer {
