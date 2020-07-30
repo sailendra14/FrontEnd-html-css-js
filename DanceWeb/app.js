@@ -15,7 +15,12 @@ app.set('views', path.join(__dirname, 'templates')); //Set the views directory
 //Endpoints
 app.get('/', (req, res) => {
     const params = {};
-    res.status(200).render('../templates/index.pug', params);
+    res.status(200).render('../templates/home.pug', params);
+});
+
+app.get('/contact', (req, res) => {
+    const params = {};
+    res.status(200).render('../templates/contact.pug', params);
 });
 
 app.listen(port, () => {
